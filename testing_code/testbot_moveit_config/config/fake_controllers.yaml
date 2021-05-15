@@ -1,0 +1,30 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+  - name: fake_base_controller
+    joints:
+      - virtual_px
+      - virtual_py
+      - virtual_rotation
+  - name: fake_base_arm_controller
+    joints:
+      - virtual_px
+      - virtual_py
+      - virtual_rotation
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+  - name: fake_hand_controller
+    joints:
+      - panda_finger_joint1

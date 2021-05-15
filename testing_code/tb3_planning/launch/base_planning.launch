@@ -1,0 +1,11 @@
+
+<launch>
+
+  <!-- By default, we are not in debug mode -->
+  <arg name="debug" default="false" />
+
+
+  <node name="base_planning" pkg="tb3_planning" type="base_planning" respawn="false" output="screen" launch-prefix="gdb --args">
+  </node>
+
+</launch>

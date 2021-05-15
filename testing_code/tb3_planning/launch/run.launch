@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- By default, we are not in debug mode -->
+  <arg name="debug" default="false" />
+<!--
+  <include file="$(find turtlebot3_manipulation_moveit_config)/launch/demo.launch">
+  
+  </include>-->
+
+  <node name="tb3_wiping" pkg="tb3_planning" type="tb3_wiping" respawn="false" output="screen">
+  </node>
+
+</launch>

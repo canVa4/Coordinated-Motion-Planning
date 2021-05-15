@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ridgeback_description
+    relative_path: urdf/ridgeback.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/ridgeback.srdf
+  CONFIG:
+    author_name: ZX
+    author_email: zhux@bupt.edu.cn
+    generated_timestamp: 1621002696

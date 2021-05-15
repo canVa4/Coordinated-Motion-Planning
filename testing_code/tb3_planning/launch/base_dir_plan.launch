@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="test" pkg="tb3_planning" type="base_dir_plan" respawn="false" output="screen" launch-prefix="gdb --args">
+    <rosparam command="load" file="$(find turtlebot3_manipulation_moveit_config)/config/kinematics.yaml"/>
+    <param name="/planning_plugin" value="ompl_interface/OMPLPlanner"/>
+    <rosparam command="load" file="$(find turtlebot3_manipulation_moveit_config)/config/ompl_planning.yaml"/>
+  </node>
+
+</launch>
